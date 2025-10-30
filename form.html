@@ -10,10 +10,45 @@
   <script src="script.js" defer></script>
   </head>
   <body>
-    <form id="test" method="POST" action="https://script.google.com/macros/s/AKfycbxt1D8dsVHb38XJOSgvDD_35tDuXyBsOM2fIL65CSZZ7PCs1DRC5rGeGRy3wxEoNcnw/exec">
-      <input name="Email" type="email" placeholder="Email" required>
-      <input name="Name" type="text" placeholder="Name" required>
-      <button type="submit">Send</button>
-    </form>
+    <div class="row">
+      <div class="col-4">
+        <nav id="scoutingTabs" class="h-100 flex-column align-items-stretch pe-4 border-end">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#setupTab">Setup</a>
+            <a class="nav-link" href="#autonTab">Auton</a>
+            <a class="nav-link" href="#teleopTab">Teleop</a>
+            <a class="nav-link" href="#defenseTab">Defense</a>
+            <a class="nav-link" href="#commentsTab">Comments</a>
+            </nav>
+        </nav>
+      </div>
+      <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#scoutingTabs" data-bs-smooth-scroll="true" class="scrollspy" tabindex="0">
+          <div id="setupTab">
+            <h4>Setup</h4>
+            <p>...</p>
+          </div>
+          <div id="autonTab">
+            <h4>Auton</h4>
+            <p>...</p>
+          </div>
+          <div id="teleopTab">
+            <h4>Teleop</h4>
+            <p>...</p>
+          </div>
+          <div id="defenseTab">
+            <h4>Defense</h4>
+            <p>...</p>
+          </div>
+          <div id="commentsTab">
+            <h4>Comments</h4>
+            <div class="mb-3">
+              <label for="commentsTextarea" class="form-label">Comments</label>
+              <textarea class="form-control" id="commentsTextarea" rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

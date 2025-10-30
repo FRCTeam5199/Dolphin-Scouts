@@ -7,8 +7,6 @@ document.getElementById('test').addEventListener('submit', function(event) {
       method: 'POST',
       body: formData
   }).then(response => response.text()).then(data => {
-      console.log(data);
-      alert('Form submitted successfully!');
       // Change later to selectively reset form
       this.reset();
   }).catch(error => {
